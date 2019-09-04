@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+
+body {
+    background-color: rgb(255, 217, 0);
+    font-family: 'Chilanka', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    font-size: 300%;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+}
+
+.sub-header {
+    display: flex;
+    flex-direction: column;
+    font-size: 300%;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto 0 auto;
+}
+.sub-head-row {
+    display: flex;
+}
+
+#reset-game {
+    padding: 15px 50px 10px 50px;
+    border-radius: 13px;
+    border: 3px solid black;
+    font-size: 50%;
+    font-family: 'Chilanka', cursive;
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 0 15px 0 0;
+    display: none;
+}
+#stop-game,
+#start-game {
+    padding: 15px 50px 10px 50px;
+    border-radius: 13px;
+    border: 3px solid black;
+    font-size: 50%;
+    font-family: 'Chilanka', cursive;
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 0 15px 0 0;
+}
+
+.score-text {
+    margin: 0 25px 0 0;
+}
+
+#start-game:hover {
+    background-color: rgb(97, 134, 255)
+}
+
+#start-game:active {
+    background-color: rgb(41, 91, 255)
+}
+
+#stop-game:hover {
+    background-color: rgb(97, 134, 255)
+}
+    
+#stop-game:active {
+    background-color: rgb(41, 91, 255)
+}
+
+#reset-game:hover {
+    background-color: rgb(97, 134, 255)
+}
+
+#reset-game:active {
+    background-color: rgb(41, 91, 255)
+}
+
+.marks {
+    font-style: italic;
+}
+
+.game {
+    display: flex;
+    width: 700px;
+    flex-wrap: wrap;
+    margin: 0px auto 0px auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.bump-and-hole {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 245px;
+    margin: 0 30px 0 0;
+}
+
+.grass {
+    z-index: 10;
+    position: relative;
+}
+
+.pikachu {
+    position: relative;
+    top: 130px; /* 20px is top, 170px is bot*/
+    left: 20px;
+    cursor: pointer;
+    transform: translateY(120px);
+    transition: all .5s ease-in-out;
+}
+
+.down {
+    transform: translateY(-130px);
+}
