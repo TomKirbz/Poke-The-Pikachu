@@ -31,6 +31,8 @@ const randomPikachu = () => {
 
 const begin = () => {
     countdown()
+    startGame.style.display = "none"
+    stopGame.style.display = "block"
     beginInt = setInterval(() => {
     showPikachu()
     
@@ -73,9 +75,12 @@ const countdown = () => {
 const reset = () => {
   playTime = 20
   myScore = 0
+  scoreBoard.innerText = "0"
   resetGame.style.display = "none"
   stopGame.innerText = "Stop !!"
   timer.innerText = playTime
+  startGame.style.display = "block"
+  stopGame.style.display = "none"
 }
 
 resetGame.addEventListener("click", reset)

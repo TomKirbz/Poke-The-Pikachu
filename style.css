@@ -26,6 +26,7 @@ header {
     display: flex;
 }
 
+#stop-game,
 #reset-game {
     padding: 15px 50px 10px 50px;
     border-radius: 13px;
@@ -37,7 +38,7 @@ header {
     margin: 0 15px 0 0;
     display: none;
 }
-#stop-game,
+
 #start-game {
     padding: 15px 50px 10px 50px;
     border-radius: 13px;
